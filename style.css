@@ -1,25 +1,26 @@
 body{
-    background-color: aqua;
-    color:beige
+    background-color:#cbb8dd;
+    color:#551a8b;
 }
 p{
-    color:blue;
+    color:#5d478b;
 }
 #p1{
-    color:azure;
+    color:#7d26cd;
 }
 *{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+  font-family: Arial, sans-serif;  
 }
 table,tr,td,th{
     border-collapse: collapse;
-    border: 1px solid #aabbcc;
+    border: 2px solid #815781;
+    padding: 5px;
 }
 input{
     border-radius: 8px;
     margin: 10px;
-    background-color: aquamarine;
+    background-color: #473c8b;
 }
 input:hover{
-    background-color: orange;
+    background-color:#836fff;
 }
