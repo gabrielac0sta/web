@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            
+            grid-template-rows: 100px 200px 30vh;
+
+            grid-template-areas: 
+                "header header header"
+                "main . sidebar"
+                "footer footer footer"
+            ;
+            
+        }
+        
+        @media (max-width: 200px){
+            .container{
+                display: grid;
+                grid-template-rows: 100px 200px 30vh;
+
+                grid-template-areas: 
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer"
+                ;
+            }
+        }
+
+        .box{border: 1px solid black;}
+        #grade1{grid-area: header; background-color: orange;}
+        #grade2{grid-area: main; background-color: blue;}
+        #grade3{grid-area: sidebar; background-color: red;}
+        #grade4{grid-area: footer; background-color: green;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="grade1">header</div>
+        <div class="box" id="grade2">main</div>
+        <div class="box" id="grade3">sidebar</div>
+        <div class="box" id="grade4">footer</div>
+    </div>
+</body>
+</html>
